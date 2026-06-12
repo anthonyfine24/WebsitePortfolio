@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="Portfolio">
+    <meta name="author" content="Anthony Fine">
+    <link href="assets/img/placeholder.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" title="main"/>
+</head>
+
+<body>
+
+<nav>
+    <div class="title">Projects</div>
+    <ul class="nav_bar" id="nav_bar">
+        <li class="items"><a href="index.html">Home</a></li>
+        <li class="items"><a href="about.html">About Me</a></li>
+        <li class="items"><a href="resume.html">Resume</a></li>
+        <li class="items"><a href="projects.html" class="active">My Projects</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="projects-container">
+    <div class="projects-items">
+        <h2>Python Assignment 2</h2>
+        <p>
+            This code defines a Vehicle class with attributes for color, number of doors, and whether it's gas-powered,
+            each validated through properties. It includes a method to check if the vehicle is eco-friendly
+            (2 doors and not gas-powered) and a string representation method. The Truck class extends Vehicle,
+            adding attributes for the number of seats and trunk space, with additional validation and an overridden
+            eco-friendly check that includes specific truck criteria.
+        </p>
+        <br>
+        <p><img src="assets/img/assignment_2.png" alt="Assignment 2" class="me"></p>
+        <p><img src="assets/img/assignment_2.1.png" alt="Assignment 2" class="me"></p>
+        <p><img src="assets/img/assignment_2.2.png" alt="Assignment 2" class="me"></p>
+        <p><img src="assets/img/assignment_2.3.png" alt="Assignment 2" class="me"></p>
+    </div>
+    <div class="projects-items">
+        <h2>Python Assignment 4</h2>
+        <p>
+            This script automates the configuration of OSPF routing on Cisco routers via Telnet using the Netmiko
+            library. It creates configuration files for three routers with specific credentials and ports, as well as
+            a file containing OSPF commands. The routers' details and OSPF commands are loaded, and each router is
+            accessed sequentially to apply the configurations. Errors such as timeouts, authentication failures, or
+            other exceptions are handled gracefully and logged.
+        </p>
+        <br>
+        <p><img src="assets/img/assignment_4.png" alt="Assignment 4" class="me"></p>
+        <p><img src="assets/img/assignment_4.1.png" alt="Assignment 4" class="me"></p>
+        <p><img src="assets/img/assignment_4.2.png" alt="Assignment 4" class="me"></p>
+    </div>
+    <div class="projects-items">
+        <h2>Python Assignment 5</h2>
+        <p>
+            This code simulates a multithreaded ticket booking system where 110 counters attempt to book 100 available
+            seats. It uses a TicketBooking class with a thread-safe mechanism (a lock) to ensure seat availability is
+            checked and updated atomically. Each counter is represented by a thread, and threads either successfully
+            book a seat or report that no seats are available. The program ensures all threads complete execution
+            before terminating.
+        </p>
+        <br>
+        <p><img src="assets/img/assignment_5.png" alt="Assignment 5" class="me"></p>
+        <p><img src="assets/img/assignment_5.1.png" alt="Assignment 5" class="me"></p>
+    </div>
+</div>
+
+<footer id="footer">
+    <p><strong>Contact Information:</strong></p>
+    <p>+1 (647) 383-7919</p>
+    <p><a href="mailto:anthonyfine24@gmail.com" style="color: #BCBDFF">anthonyfine24@gmail.com</a></p>
+    <br>
+    <button onclick="location.href='index.html'">Take me home</button>
+    <br>
+    <br>
+    <p>Author: Anthony A. Fine 2024</p>
+</footer>
+
+</body>
+</html>

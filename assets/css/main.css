@@ -1,0 +1,311 @@
+/* General css for the design of the home page and all other pages */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    color: #BCBDFF;
+    background-color: #4E4E86;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #4E4E86;
+}
+
+/* CSS for the navigation bar and the buttons */
+.title {
+    color: #BCBDFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav {
+    height: 80px;
+    overflow: hidden;
+    background-color: #3F3E5D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc((100vw - 1300px) / 2);
+}
+
+.nav_bar{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav li{
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.items a{
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: #BCBDFF;
+}
+
+.items a:hover{
+    color: #3F3E5D;
+    background: #BCBDFF;
+}
+
+nav ul li a.active {
+    color: #3F3E5D;
+    background-color: #BCBDFF;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    color: #BCBDFF;
+    background: #3F3E5D;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover{
+    background: #BCBDFF;
+    color: #3F3E5D;
+}
+
+/* CSS for general content in all pages*/
+
+.content {
+    background-color: #4E4E86;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+/* css for the index home page */
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #BCBDFF;
+    padding: 0 2rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+.content-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.content-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 2rem;
+
+}
+
+.me {
+    width: 100%;
+    height: 100%;
+}
+
+/* css for the about page */
+
+.content-la {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #BCBDFF;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.content-la h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.content-la p {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.content-la ul{
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.content-la ol {
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.content-ra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #BCBDFF;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.content-ra h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.content-ra p {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* css for the resume page */
+
+h1{
+    margin: 10px;
+    padding: 20px;
+    color: #BCBDFF;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-items{
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: #BCBDFF;
+}
+
+.highlight-container{
+    margin-bottom: 0;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #BCBDFF;
+}
+
+.highlight-items{
+    padding: 20px;
+    border-radius: 4px;
+    color: #BCBDFF;
+}
+
+.environments-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #BCBDFF;
+}
+
+.environment-items{
+    display: flex;
+    padding: 20px;
+    border-radius: 4px;
+    color: #BCBDFF;
+}
+
+.experience-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    font-size: 0.90rem;
+    line-height: 1.5;
+    color: #BCBDFF;
+}
+
+.experience-items{
+    color: #BCBDFF;
+}
+
+h2{
+    padding: 20px;
+    color: #BCBDFF;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.4em;
+}
+.post-secondary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.high-school{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.education-items{
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #BCBDFF;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 4rem;
+    font-size: 0.90rem;
+    line-height: 1.5;
+    color: #BCBDFF;
+}
+
+.projects-items{
+    padding: 20px;
+    color: #BCBDFF;
+}
